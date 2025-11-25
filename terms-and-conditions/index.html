@@ -218,6 +218,37 @@ img{max-width:100%; display:block}
   color:var(--accent);
   border-color:rgba(245,196,82,0.4);
 }
+.pill-row{
+  display:flex;
+  gap:0.55rem;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.mini-title{
+  margin:0 0 0.3rem;
+  font-family:var(--font-heading);
+  color:var(--heading);
+  font-size:1.15rem;
+}
+.legal-hero{
+  display:grid;
+  grid-template-columns:1.15fr 0.85fr;
+  gap:1rem;
+  align-items:center;
+  margin-bottom:1.5rem;
+}
+.legal-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+  gap:1rem;
+}
+.legal-card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:1.2rem;
+  box-shadow:var(--shadow);
+}
 
 .uberspinz-online-disclaimer-card{padding:3rem 0}
 .disclaimer-box{
@@ -422,7 +453,7 @@ img{max-width:100%; display:block}
   border-bottom:1px solid var(--border);
   padding:3.5rem 0;
 }
-.uberspinz-online-legal .section-title{text-align:center}
+.uberspinz-online-legal .section-title{text-align:left}
 .uberspinz-online-legal .subheading{
   color:var(--accent);
   font-size:1.15rem;
@@ -555,6 +586,7 @@ img{max-width:100%; display:block}
   .contact-grid{
     grid-template-columns:1fr;
   }
+  .legal-hero{grid-template-columns:1fr}
   .hero-title{font-size:2.4rem}
 }
 @media (max-width: 768px){
@@ -574,14 +606,14 @@ img{max-width:100%; display:block}
 <div class="notice-banner notice-banner-e5s8">
   <div class="container container-y8i1 banner-inner banner-inner-q1h5">
     <span class="banner-pill banner-pill-j0j6">18+</span>
-    <span>JackpotHub is a free-to-play social casino experience. No real-money gambling or prizes. 18+ only. Please play responsibly.</span>
+    <span>uberspinz is a free-to-play social casino experience. No real-money gambling or prizes. 18+ only. Please play responsibly.</span>
   </div>
 </div>
 
 <nav class="navbar navbar-x3m9 navbar-expand-lg navbar-expand-lg-g0e0 uberspinz-online-nav uberspinz-online-nav-f4h6">
   <div class="container container-y8i1 d-flex d-flex-t3n4 align-items-center align-items-center-h2j8 justify-content-between justify-content-between-f1r2">
     <a class="navbar-brand navbar-brand-s2x9" href="/">
-      <img class="brand-logo brand-logo-b0x8" src="../assets/img.png" alt="JackpotHub logo">
+      <img class="brand-logo brand-logo-b0x8" src="../assets/img.png" alt="uberspinz logo">
       <span class="sr-only sr-only-h5i1">uberspinz.online</span>
     </a>
     <button class="navbar-toggler navbar-toggler-x0c2" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -603,61 +635,83 @@ img{max-width:100%; display:block}
 
 <section id="terms-and-conditions" class="uberspinz-online-legal uberspinz-online-legal-b6j3">
   <div class="container container-y8i1">
-    <h2 class="section-title section-title-q8b8">Terms &amp; Conditions</h2>
+    <div class="legal-hero">
+      <div>
+        <p class="eyebrow eyebrow-n6j7">Usage basics</p>
+        <h2 class="section-title section-title-q8b8">Terms &amp; Conditions</h2>
+        <p class="section-sub section-sub-q2n7">Guidelines for using the uberspinz.online experience responsibly.</p>
+        <div class="pill-row">
+          <span class="pill pill-n7n0 accent accent-r8f9">Entertainment-only</span>
+          <span class="pill pill-n7n0">Respect the brand</span>
+          <span class="pill pill-n7n0">No scraping</span>
+        </div>
+      </div>
+      <div class="legal-card">
+        <h4 class="mini-title">Fast version</h4>
+        <p>Use the site for lawful, entertainment-focused browsing. Do not tamper with code or reuse assets without consent.</p>
+        <a href="/play" class="uberspinz-online-btn uberspinz-online-btn-g5k6 primary primary-e8e2">Jump to play</a>
+      </div>
+    </div>
 
-    <h3 class="subheading subheading-t1b6">1. Acceptance</h3>
-    <p>
-      By accessing <strong>uberspinz.online</strong>, you agree to these Terms &amp; Conditions. If you do not agree, please refrain
-      from using the site or its content.
-    </p>
+    <div class="legal-grid">
+      <div class="legal-card">
+        <h3 class="subheading subheading-t1b6">1. Acceptance</h3>
+        <p>
+          By accessing <strong>uberspinz.online</strong>, you agree to these Terms &amp; Conditions. If you do not agree, please refrain
+          from using the site or its content.
+        </p>
 
-    <h3 class="subheading subheading-t1b6">2. Purpose and access</h3>
-    <p>
-      This site is designed for entertainment, campaign previews, and creative demos in a social casino style format. You may use
-      it only for lawful purposes that align with these guidelines.
-    </p>
+        <h3 class="subheading subheading-t1b6">2. Purpose and access</h3>
+        <p>
+          This site is designed for entertainment, campaign previews, and creative demos in a social casino style format. You may use
+          it only for lawful purposes that align with these guidelines.
+        </p>
 
-    <h3 class="subheading subheading-t1b6">3. User responsibilities</h3>
-    <p>
-      You agree not to tamper with site code, attempt unauthorized access, scrape content, or redistribute assets without written
-      permission. Respectful, responsible use is required at all times.
-    </p>
+        <h3 class="subheading subheading-t1b6">3. User responsibilities</h3>
+        <p>
+          You agree not to tamper with site code, attempt unauthorized access, scrape content, or redistribute assets without written
+          permission. Respectful, responsible use is required at all times.
+        </p>
 
-    <h3 class="subheading subheading-t1b6">4. Intellectual property</h3>
-    <p>
-      All original designs, text, and visuals on <strong>uberspinz.online</strong> are protected by copyright and intellectual
-      property laws. Reuse or modification without consent is prohibited.
-    </p>
+        <h3 class="subheading subheading-t1b6">4. Intellectual property</h3>
+        <p>
+          All original designs, text, and visuals on <strong>uberspinz.online</strong> are protected by copyright and intellectual
+          property laws. Reuse or modification without consent is prohibited.
+        </p>
+      </div>
 
-    <h3 class="subheading subheading-t1b6">5. Limitations of liability</h3>
-    <p>
-      <strong>uberspinz.online</strong> is provided “as-is.” We are not liable for direct, indirect, incidental, or consequential
-      damages arising from the use or inability to use the site.
-    </p>
+      <div class="legal-card">
+        <h3 class="subheading subheading-t1b6">5. Limitations of liability</h3>
+        <p>
+          <strong>uberspinz.online</strong> is provided “as-is.” We are not liable for direct, indirect, incidental, or consequential
+          damages arising from the use or inability to use the site.
+        </p>
 
-    <h3 class="subheading subheading-t1b6">6. External links</h3>
-    <p>
-      External links may appear for context or inspiration. We are not responsible for the nature, content, or reliability of
-      external sites.
-    </p>
+        <h3 class="subheading subheading-t1b6">6. External links</h3>
+        <p>
+          External links may appear for context or inspiration. We are not responsible for the nature, content, or reliability of
+          external sites.
+        </p>
 
-    <h3 class="subheading subheading-t1b6">7. Changes</h3>
-    <p>
-      Terms may be updated as the platform evolves. Continued use after updates indicates acceptance of the latest version.
-    </p>
+        <h3 class="subheading subheading-t1b6">7. Changes</h3>
+        <p>
+          Terms may be updated as the platform evolves. Continued use after updates indicates acceptance of the latest version.
+        </p>
 
-    <h3 class="subheading subheading-t1b6">8. Governing law</h3>
-    <p>
-      These terms follow general digital content standards and applicable regulations in relevant jurisdictions. Questions can be
-      directed to <a href="mailto:hello@uberspinz.online" class="link-accent link-accent-c2x6">hello@uberspinz.online</a>.
-    </p>
+        <h3 class="subheading subheading-t1b6">8. Governing law</h3>
+        <p>
+          These terms follow general digital content standards and applicable regulations in relevant jurisdictions. Questions can be
+          directed to <a href="mailto:hello@uberspinz.online" class="link-accent link-accent-c2x6">hello@uberspinz.online</a>.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
 <footer class="uberspinz-online-footer uberspinz-online-footer-i1v5">
   <div class="container container-y8i1">
     <div class="footer-brand footer-brand-w6h7">
-      <img class="brand-logo brand-logo-b0x8" src="../assets/img.png" alt="JackpotHub logo">
+      <img class="brand-logo brand-logo-b0x8" src="../assets/img.png" alt="uberspinz logo">
       <span class="sr-only sr-only-h5i1">uberspinz.online</span>
     </div>
 

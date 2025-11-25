@@ -218,6 +218,37 @@ img{max-width:100%; display:block}
   color:var(--accent);
   border-color:rgba(245,196,82,0.4);
 }
+.pill-row{
+  display:flex;
+  gap:0.55rem;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.mini-title{
+  margin:0 0 0.3rem;
+  font-family:var(--font-heading);
+  color:var(--heading);
+  font-size:1.15rem;
+}
+.legal-hero{
+  display:grid;
+  grid-template-columns:1.15fr 0.85fr;
+  gap:1rem;
+  align-items:center;
+  margin-bottom:1.5rem;
+}
+.legal-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+  gap:1rem;
+}
+.legal-card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:1.2rem;
+  box-shadow:var(--shadow);
+}
 
 .uberspinz-online-disclaimer-card{padding:3rem 0}
 .disclaimer-box{
@@ -422,7 +453,7 @@ img{max-width:100%; display:block}
   border-bottom:1px solid var(--border);
   padding:3.5rem 0;
 }
-.uberspinz-online-legal .section-title{text-align:center}
+.uberspinz-online-legal .section-title{text-align:left}
 .uberspinz-online-legal .subheading{
   color:var(--accent);
   font-size:1.15rem;
@@ -555,6 +586,7 @@ img{max-width:100%; display:block}
   .contact-grid{
     grid-template-columns:1fr;
   }
+  .legal-hero{grid-template-columns:1fr}
   .hero-title{font-size:2.4rem}
 }
 @media (max-width: 768px){
@@ -574,14 +606,14 @@ img{max-width:100%; display:block}
 <div class="notice-banner notice-banner-x3q2">
   <div class="container container-c4r1 banner-inner banner-inner-q5d2">
     <span class="banner-pill banner-pill-m7r6">18+</span>
-    <span>JackpotHub is a free-to-play social casino experience. No real-money gambling or prizes. 18+ only. Please play responsibly.</span>
+    <span>uberspinz is a free-to-play social casino experience. No real-money gambling or prizes. 18+ only. Please play responsibly.</span>
   </div>
 </div>
 
 <nav class="navbar navbar-y5h7 navbar-expand-lg navbar-expand-lg-w7s2 uberspinz-online-nav uberspinz-online-nav-a7d0">
   <div class="container container-c4r1 d-flex d-flex-n1a5 align-items-center align-items-center-x8i9 justify-content-between justify-content-between-r0j8">
     <a class="navbar-brand navbar-brand-q2g5" href="/">
-      <img class="brand-logo brand-logo-q6p5" src="../assets/img.png" alt="JackpotHub logo">
+      <img class="brand-logo brand-logo-q6p5" src="../assets/img.png" alt="uberspinz logo">
       <span class="sr-only sr-only-o8m2">uberspinz.online</span>
     </a>
     <button class="navbar-toggler navbar-toggler-b5h2" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -603,50 +635,72 @@ img{max-width:100%; display:block}
 
 <section id="disclaimer" class="uberspinz-online-legal uberspinz-online-legal-y9y4">
   <div class="container container-c4r1">
-    <h2 class="section-title section-title-t6h0">Disclaimer</h2>
+    <div class="legal-hero">
+      <div>
+        <p class="eyebrow eyebrow-n6j7">Responsible play</p>
+        <h2 class="section-title section-title-t6h0">Disclaimer</h2>
+        <p class="section-sub section-sub-q2n7">Everything on uberspinz.online is entertainment-only. No money, no prizes — just social casino style previews.</p>
+        <div class="pill-row">
+          <span class="pill pill-n7n0 accent accent-r8f9">18+ only</span>
+          <span class="pill pill-n7n0">No cash prizes</span>
+          <span class="pill pill-n7n0">Demo mode embeds</span>
+        </div>
+      </div>
+      <div class="legal-card">
+        <h4 class="mini-title">Fast version</h4>
+        <p>uberspinz runs free-to-play previews with zero monetary flows or rewards. External demos stay in practice mode.</p>
+        <a href="/#home" class="uberspinz-online-btn uberspinz-online-btn-g5k6 ghost">Back to landing</a>
+      </div>
+    </div>
 
-    <h3 class="subheading subheading-a2a2">1. Purpose of this site</h3>
-    <p>
-      <strong>uberspinz.online</strong> hosts free-to-play, social casino style browser experiences. These interactive demos are
-      meant for entertainment and campaign showcases only. There are no monetary prizes, wagers, or deposits anywhere on the site.
-    </p>
+    <div class="legal-grid">
+      <div class="legal-card">
+        <h3 class="subheading subheading-a2a2">1. Purpose of this site</h3>
+        <p>
+          <strong>uberspinz.online</strong> hosts free-to-play, social casino style browser experiences. These interactive demos are
+          meant for entertainment and campaign showcases only. There are no monetary prizes, wagers, or deposits anywhere on the site.
+        </p>
 
-    <h3 class="subheading subheading-a2a2">2. No professional advice</h3>
-    <p>
-      Content on this site does not constitute legal, financial, or professional advice. Any creative inspiration or interpretations
-      are solely the responsibility of the visitor.
-    </p>
+        <h3 class="subheading subheading-a2a2">2. No professional advice</h3>
+        <p>
+          Content on this site does not constitute legal, financial, or professional advice. Any creative inspiration or interpretations
+          are solely the responsibility of the visitor.
+        </p>
 
-    <h3 class="subheading subheading-a2a2">3. Technical limitations</h3>
-    <p>
-      We aim for high uptime and quick loads, but <strong>uberspinz.online</strong> does not guarantee uninterrupted or error-free
-      performance. Temporary downtime or browser differences may occur.
-    </p>
+        <h3 class="subheading subheading-a2a2">3. Technical limitations</h3>
+        <p>
+          We aim for high uptime and quick loads, but <strong>uberspinz.online</strong> does not guarantee uninterrupted or error-free
+          performance. Temporary downtime or browser differences may occur.
+        </p>
+      </div>
 
-    <h3 class="subheading subheading-a2a2">4. Use of the platform</h3>
-    <p>
-      Visitors agree to use this platform responsibly and for lawful purposes. Misuse, scraping, reverse engineering, or misrepresenting
-      the brand is prohibited.
-    </p>
+      <div class="legal-card">
+        <h3 class="subheading subheading-a2a2">4. Use of the platform</h3>
+        <p>
+          Visitors agree to use this platform responsibly and for lawful purposes. Misuse, scraping, reverse engineering, or misrepresenting
+          the brand is prohibited.
+        </p>
 
-    <h3 class="subheading subheading-a2a2">5. External links</h3>
-    <p>
-      Certain pages may include links to external resources. We do not control or endorse external content and cannot guarantee safety,
-      accuracy, or reliability beyond our domain.
-    </p>
+        <h3 class="subheading subheading-a2a2">5. External links</h3>
+        <p>
+          Certain pages may include links to external resources. We do not control or endorse external content and cannot guarantee safety,
+          accuracy, or reliability beyond our domain.
+        </p>
 
-    <h3 class="subheading subheading-a2a2">6. Age requirement</h3>
-    <p>
-      <strong>uberspinz.online</strong> is intended for adults aged 18+. The experiences are not designed for minors, and an age
-      confirmation is required before entry.
-    </p>
+        <h3 class="subheading subheading-a2a2">6. Age requirement</h3>
+        <p>
+          <strong>uberspinz.online</strong> is intended for adults aged 18+. The experiences are not designed for minors, and an age
+          confirmation is required before entry.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
 <footer class="uberspinz-online-footer uberspinz-online-footer-v6m2">
   <div class="container container-c4r1">
     <div class="footer-brand footer-brand-f3e8">
-      <img class="brand-logo brand-logo-q6p5" src="../assets/img.png" alt="JackpotHub logo">
+      <img class="brand-logo brand-logo-q6p5" src="../assets/img.png" alt="uberspinz logo">
       <span class="sr-only sr-only-o8m2">uberspinz.online</span>
     </div>
 

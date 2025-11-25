@@ -147,25 +147,70 @@ img{max-width:100%; display:block}
   margin:0 0 0.45rem;
 }
 .section-sub{margin:0 0 1rem; color:var(--muted)}
-
-.uberspinz-online-play{
-  padding:3.5rem 0;
-  text-align:center;
+.eyebrow{
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:0.78rem;
+  color:var(--muted);
+  margin:0 0 0.35rem;
 }
-.game-wrapper{
-  margin:2rem auto;
+.pill{
+  display:inline-flex;
+  align-items:center;
+  gap:0.35rem;
+  padding:0.4rem 0.8rem;
+  border-radius:999px;
+  background:var(--panel);
+  border:1px solid var(--border);
+  color:var(--muted);
+  font-weight:600;
+  font-size:0.95rem;
+}
+.pill.accent{
+  background:rgba(245,196,82,0.14);
+  color:var(--accent);
+  border-color:rgba(245,196,82,0.4);
+}
+.pill-row{
   display:flex;
-  justify-content:center;
+  gap:0.55rem;
+  flex-wrap:wrap;
+  align-items:center;
 }
-.game-wrapper > .w-100{
-  width:100%;
-  max-width:920px;
-  text-align:center;
+
+.play-hero{
+  padding:3rem 0 1.6rem;
+}
+.play-lede{
+  display:grid;
+  grid-template-columns:1.2fr 0.8fr;
+  gap:1rem;
+  align-items:center;
+}
+.play-card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:1.2rem;
+  box-shadow:var(--shadow);
+}
+.play-card h4{
+  margin:0 0 0.35rem;
+  color:var(--heading);
+  font-family:var(--font-heading);
+}
+.play-card p{color:var(--muted); margin:0 0 0.6rem}
+.uberspinz-online-play{
+  padding:2rem 0 3.5rem;
+}
+.play-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+  gap:1rem;
 }
 .game-frame{
   position:relative;
   width:100%;
-  max-width:920px;
   border-radius:14px;
   overflow:hidden;
   background:linear-gradient(160deg, rgba(245,196,82,0.14), rgba(112,240,199,0.08));
@@ -263,8 +308,12 @@ img{max-width:100%; display:block}
   border:0;
 }
 
+@media (max-width: 992px){
+  .play-lede{
+    grid-template-columns:1fr;
+  }
+}
 @media (max-width: 768px){
-  .game-frame{max-width:100%}
   .uberspinz-online-nav{padding:0.75rem 0}
 }
 @media (max-width: 576px){
@@ -278,7 +327,7 @@ img{max-width:100%; display:block}
 <div class="notice-banner notice-banner-d4v6">
   <div class="container container-n5s9 banner-inner banner-inner-e0g3">
     <span class="banner-pill banner-pill-u5l2">18+</span>
-    <span>JackpotHub is a free-to-play social casino experience. No real-money gambling or prizes. 18+ only. Please play responsibly.</span>
+    <span>uberspinz is a free-to-play social casino experience. No real-money gambling or prizes. 18+ only. Please play responsibly.</span>
   </div>
 </div>
 
@@ -286,7 +335,7 @@ img{max-width:100%; display:block}
 <nav class="navbar navbar-h1d6 navbar-expand-lg navbar-expand-lg-x1e0 uberspinz-online-nav uberspinz-online-nav-s2b8">
   <div class="container container-n5s9 d-flex d-flex-l2v1 align-items-center align-items-center-i0e4 justify-content-between justify-content-between-u9t9">
     <a class="navbar-brand navbar-brand-e4n4" href="/">
-      <img class="brand-logo brand-logo-y2l5" src="../assets/img.png" alt="JackpotHub logo">
+      <img class="brand-logo brand-logo-y2l5" src="../assets/img.png" alt="uberspinz logo">
       <span class="sr-only sr-only-l6n5">uberspinz.online</span>
     </a>
     <button class="navbar-toggler navbar-toggler-s3p3" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -307,34 +356,50 @@ img{max-width:100%; display:block}
 </nav>
 
 <main>
-  <!-- Play gallery of external demos -->
+  <section class="play-hero">
+    <div class="container container-n5s9">
+      <div class="play-lede">
+        <div>
+          <p class="eyebrow eyebrow-n6j7">Play hub</p>
+          <h1 class="section-title section-title-a7o7">Pick an uberspinz capsule and run it instantly.</h1>
+          <p class="section-sub section-sub-x7g6">
+            Three live previews side-by-side. All practice/demo mode, no deposits, no prizes — entertainment only for 18+ visitors.
+          </p>
+          <div class="pill-row">
+            <span class="pill pill-a5k8 accent accent-l0a5">18+ only</span>
+            <span class="pill pill-a5k8"><i class="fa-solid fa-solid-i1m6 fa-tablet-screen-button fa-tablet-screen-button-d7y8"></i> Mobile &amp; desktop</span>
+            <span class="pill pill-a5k8"><i class="fa-solid fa-solid-i1m6 fa-up-right-from-square fa-up-right-from-square-k0k2"></i> External embeds</span>
+          </div>
+        </div>
+        <div class="play-card">
+          <h4>Quick directions</h4>
+          <p>Use the grid below to test the demos. Each frame opens externally and stays in practice mode.</p>
+          <a class="uberspinz-online-btn uberspinz-online-btn-g5k6 primary primary-e8e2" href="/">Return to landing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="uberspinz-online-play uberspinz-online-play-n0x6">
     <div class="container container-n5s9">
-      <h1 class="section-title section-title-a7o7">Play demos</h1>
-      <p class="section-sub section-sub-x7g6">Free-to-play social casino style experiences. External embeds, no deposits or prizes.</p>
-
-      <div class="game-wrapper game-wrapper-e0p2">
-        <div class="w-100 w-100-h5f9">
+      <div class="play-grid">
+        <div class="play-card">
           <div class="pill pill-a5k8 accent accent-l0a5">Live preview</div>
           <div class="game-frame game-frame-d2c1">
             <iframe src="https://released.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=stadiumofriches&lang=en_GB&practice=1&channel=desktop&demo=2&refresh=1763688384036" title="Stadium of Riches" allowfullscreen loading="lazy"></iframe>
           </div>
           <p class="game-caption game-caption-y9s6">Embedded demo: Stadium of Riches (external launch).</p>
         </div>
-      </div>
 
-      <div class="game-wrapper game-wrapper-e0p2">
-        <div class="w-100 w-100-h5f9">
+        <div class="play-card">
           <div class="pill pill-a5k8 accent accent-l0a5">Mobile-friendly preview</div>
           <div class="game-frame game-frame-d2c1">
             <iframe src="https://released.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=ringsofprosperity&lang=en_GB&practice=1&channel=mobile&demo=2&refresh=1763688502976" title="Rings of Prosperity" allowfullscreen loading="lazy"></iframe>
           </div>
           <p class="game-caption game-caption-y9s6">Embedded demo: Rings of Prosperity (external launch).</p>
         </div>
-      </div>
 
-      <div class="game-wrapper game-wrapper-e0p2">
-        <div class="w-100 w-100-h5f9">
+        <div class="play-card">
           <div class="pill pill-a5k8 accent accent-l0a5">Low-motion preview</div>
           <div class="game-frame game-frame-d2c1">
             <iframe src="https://released.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=lawnndisorder&lang=en_GB&practice=1&channel=mobile&demo=2&refresh=1763688570336" title="Lawn n Disorder" allowfullscreen loading="lazy"></iframe>
@@ -350,7 +415,7 @@ img{max-width:100%; display:block}
 <footer class="uberspinz-online-footer uberspinz-online-footer-e3t4">
   <div class="container container-n5s9">
     <div class="footer-brand footer-brand-b0c2">
-      <img class="brand-logo brand-logo-y2l5" src="../assets/img.png" alt="JackpotHub logo">
+      <img class="brand-logo brand-logo-y2l5" src="../assets/img.png" alt="uberspinz logo">
       <span class="sr-only sr-only-l6n5">uberspinz.online</span>
     </div>
 
